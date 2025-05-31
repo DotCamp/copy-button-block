@@ -43,3 +43,6 @@ wp-content/plugins/hello.php
 *.tmp
 *.temp
 .cache 
+
+# Plugin zip
+copy-button.zip
