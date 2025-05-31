@@ -14,6 +14,7 @@ import {
     Dropdown,
     __experimentalToolsPanel as ToolsPanel,
     __experimentalToolsPanelItem as ToolsPanelItem,
+    TextareaControl,
 } from '@wordpress/components';
 import { useSelect } from '@wordpress/data';
 import { ColorPalette } from "@wordpress/block-editor";
@@ -87,10 +88,12 @@ function edit({ attributes, setAttributes }: BlockEditProps<CopyButtonAttrs>) {
         <>
             <InspectorControls>
                 <PanelBody title={__('Button Settings', 'dotcamp/copy-button')}>
-                    <TextControl
+                    <TextareaControl
                         label={__('Text to Copy', 'dotcamp/copy-button')}
                         value={text}
                         onChange={(value: string) => setAttributes({ text: value })}
+                        rows={4}
+                        help={__('Enter the text that will be copied to clipboard when the button is clicked.', 'dotcamp/copy-button')}
                     />
                     <TextControl
                         label={__('Copied Text', 'dotcamp/copy-button')}
