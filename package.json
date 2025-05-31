@@ -2,9 +2,14 @@
     "name": "copy-button",
     "version": "0.1.0",
     "description": "A WordPress block for creating copy buttons",
+    "files": [
+        "build",
+        "copy-button.php"
+    ],
     "scripts": {
         "build": "wp-scripts build",
-        "start": "wp-scripts start"
+        "start": "wp-scripts start",
+        "export": "wp-scripts build && wp-scripts plugin-zip"
     },
     "devDependencies": {
         "@types/react": "^18.2.0",
