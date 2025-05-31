@@ -1,0 +1,32 @@
+.copy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.copy-button:hover {
+    opacity: 0.9;
+}
+
+.copy-button.small {
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.copy-button.medium {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.copy-button.large {
+    padding: 14px 28px;
+    font-size: 18px;
+}
+
+.copy-button.copied {
+    background-color: #4CAF50 !important;
+} 

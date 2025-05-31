@@ -1,0 +1,45 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "dotcamp/copy-button",
+    "version": "0.1.1",
+    "title": "Copy Button",
+    "category": "widgets",
+    "icon": "clipboard",
+    "description": "A button that copies text to clipboard with customizable appearance",
+    "supports": {
+        "html": false,
+        "align": true
+    },
+    "attributes": {
+        "text": {
+            "type": "string",
+            "default": ""
+        },
+        "buttonText": {
+            "type": "string",
+            "default": "Copy"
+        },
+        "copiedText": {
+            "type": "string",
+            "default": "Copied!"
+        },
+        "buttonColor": {
+            "type": "string",
+            "default": "#0073aa"
+        },
+        "textColor": {
+            "type": "string",
+            "default": "#ffffff"
+        },
+        "buttonSize": {
+            "type": "string",
+            "default": "medium"
+        }
+    },
+    "textdomain": "dotcamp/copy-button",
+    "editorScript": "file:./index.tsx",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "viewScript": "file:./frontend.ts"
+} 
